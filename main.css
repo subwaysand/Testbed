@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    z-index: 0;
+}
+
+/* Container Stuff */
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    z-index: 1;
+}
+
+.one {
+    background: rgba(69, 235, 250, 0.963)
+}
+
+.two {
+    background: rgb(82, 140, 0);
+}
+.three {
+    background: rgb(243, 160, 5)
+}
+
+/* Labels */
+#heady1 {
+    position: relative;
+    z-index: 10;
+    left: 25vw;
+}
+/* Image Hyperlink Styling*/
+.orcaBox {
+    block-size: 0vh;
+}
+
+/* Image Stuff */
+
+#orca {
+    position: relative;
+    align: center;
+    block-size: 9vh;
+    z-index: 3;
+}
+
+#tuna {
+    position: relative;
+    left: 25vw;
+    top: 10vh;
+    block-size: 18vh;
+    z-index: 2;
+}
+
+#orca {
+    position: relative;
+    right: 35vw;
+    bottom: 30vh;
+    block-size: 25vh;
+    z-index: 4;
+}
+
+#crab {
+    position: relative;
+    right: 13vw;
+    bottom: 11vh;
+    block-size: 4vw;
+    z-index: 3;
+}
